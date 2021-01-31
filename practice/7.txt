@@ -1,0 +1,15 @@
+https://edabit.com/challenge/NHfYRHg2tDtcZyykB
+
+function possibleBonus(x,y) {
+  if (x >= y || (x+6)<y) {
+    return "false";
+  } else {
+    return "true";
+  }
+}
+
+Option 2:
+
+function possibleBonus(x,y) {
+  return result = (x >= y || (x+6)<y) ? "false" : "true";
+}

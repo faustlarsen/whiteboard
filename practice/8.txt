@@ -1,0 +1,19 @@
+https://edabit.com/challenge/hzxN9bAebBPNqdQto
+
+function redundant(str) {
+  return function() {
+    return str;
+  }
+}
+
+const myFun = redundant("apple");
+
+https://edabit.com/challenge/Ra85gzkCTtXrNyCag
+
+function add_suffix(suffix) {
+  return function(word) {
+    return word + suffix;
+  }
+}
+
+add_ly = add_suffix("ly");

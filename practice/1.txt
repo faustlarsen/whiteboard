@@ -1,0 +1,76 @@
+create a function that takes a string. Return return middle characters. If the word's length is odd, return the middle character. If the word's length is even, return the middle two characters.
+
+
+Examples
+getMiddle("test") ➞ "es"
+
+getMiddle("testing") ➞ "t"
+
+getMiddle("middle") ➞ "dd"
+
+getMiddle("A") ➞ "A"
+
+
+string.length();
+string.split(""); //converts to array.
+array.splice(param1, param2)
+array.join("")
+
+function getMiddle(string) {
+  let newArray = [];
+  let output;
+  let array = string.split("");
+  if (array.length % 2 === 0) {  
+    newArray = array.splice((array.length/2)-1, (array.length/2));
+    output = newArray.join("");
+    return output;
+  }
+  else {
+    newArray = array.splice(Math.floor(array.length/2));
+    output = newArray.join("");
+    return output;
+  }
+}
+
+charat()
+
+
+function getMiddle(string) {
+  if (string.length % 2 === 0) {
+    return string[(string.length/2)-1] + string[(string.length/2)];
+  }
+  else {
+    return string[Math.floor(string.length/2)];
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

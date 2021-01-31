@@ -1,0 +1,12 @@
+let string = "capitalize the first letter of every word in this string.";
+
+function capitalFirst(arg) {
+  let stringArray = arg.trim().split(" ");
+  let newArray = [];
+  stringArray.forEach(function(element) {
+    newArray.push(element[0].toUpperCase() + element.slice(1));
+  });
+  return newArray.join(" ");
+}
+
+

@@ -1,0 +1,60 @@
+Rock Paper Scissors
+
+R=Rock
+P=Paper
+S=Scissors
+
+given gameArray.length=2
+
+abagail and benson 
+[A,B]
+[R,P]
+
+if abagail wins more, output Abagail is victorious
+if benson wins more, output Benson is victorious
+given tie = output tie game
+
+bigArray.push()
+
+let bigArray = [[R,P],[P,S],[R,R]];
+
+
+function winCheck(bigArray) {
+  let abagail = 0;
+  let benson = 0;
+
+  for (let i = 0; i < bigArray.length; i++) {
+    
+    if (bigArray[i] === [R,P]) {
+      benson ++;
+    }
+    else if (bigArray[i] === [R,S]) {
+      abagail ++;
+    }
+    else if (bigArray[i] === [P,S]) {
+      benson ++;
+    }
+    else if (bigArray[i] === [P,R]) {
+      abagail ++;
+    }
+    else if (bigArray[i] === [S,R]) {
+      benson ++;
+    }
+    else if (bigArray[i] === [S,P]) {
+      abagail ++;
+    } else {
+    }
+  }
+  conditional and return
+}
+
+
+
+
+
+
+
+
+
+
+https://edabit.com/challenge/jtvCv6cjHorKpmyFc
